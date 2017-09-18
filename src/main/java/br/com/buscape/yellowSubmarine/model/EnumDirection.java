@@ -10,7 +10,7 @@ public enum EnumDirection {
     LESTE("LESTE"),
     OESTE("OESTE");
 
-    private String enumDirection;
+    private final String enumDirection;
 
     EnumDirection(String direction){
         this.enumDirection = direction;
