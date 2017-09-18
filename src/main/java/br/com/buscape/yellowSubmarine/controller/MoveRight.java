@@ -6,8 +6,9 @@ import br.com.buscape.yellowSubmarine.model.Submarine;
 /**
  * @author wagner on 18/09/17
  */
-public class MoveRight {
+public class MoveRight implements Move {
 
+    @Override
     public void moveSubmarine(Submarine submarine) {
         switch (submarine.getDirection()) {
             case NORTE:
