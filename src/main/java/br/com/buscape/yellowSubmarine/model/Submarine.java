@@ -42,6 +42,10 @@ public class Submarine {
         this.direction = direction;
     }
 
+    public String getLastPosition(){
+        return x + " " + y + " " + z + " " + direction.getEnumDirection();
+    }
+
     @Override
     public int hashCode() {
         int result = x.hashCode();

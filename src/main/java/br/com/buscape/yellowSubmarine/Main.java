@@ -1,5 +1,7 @@
 package br.com.buscape.yellowSubmarine;
 
+import br.com.buscape.yellowSubmarine.controller.Control;
+
 import java.util.Scanner;
 
 
@@ -12,6 +14,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in, "UTF-8");
         System.out.print("Lets move the Yellow Submarine, tell me the coordinate: ");
         String command = scanner.next();
+
+        Control control = new Control();
+        System.out.println(control.applyRule(command));
     }
 
 }
