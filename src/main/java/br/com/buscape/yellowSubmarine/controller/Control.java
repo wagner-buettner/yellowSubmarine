@@ -1,6 +1,8 @@
 package br.com.buscape.yellowSubmarine.controller;
 
+import br.com.buscape.yellowSubmarine.exceptions.SubmarineAboveSeaLevelException;
 import br.com.buscape.yellowSubmarine.model.Submarine;
+import br.com.buscape.yellowSubmarine.validators.SubmarineValidator;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -21,7 +23,7 @@ public class Control {
 		actions.put("M", new MoveForward());
     }
 
-    public String applyRule(String inputCoordinates) {
+    public String applyRule(String inputCoordinates) throws SubmarineAboveSeaLevelException {
 
         Submarine submarine = new Submarine();
 
@@ -29,6 +31,8 @@ public class Control {
 
         for (String coordinate : coordinateArray) {
             actions.get(coordinate).moveSubmarine(submarine);
+
+            SubmarineValidator.validate(submarine);
         }
 
         return submarine.getLastPosition();
