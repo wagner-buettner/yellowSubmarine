@@ -1,4 +1,4 @@
-package br.com.buscape.yellowSubmarine.model;
+package br.com.buscape.yellowsubmarine.model;
 
 /**
  * @author wagner on 17/09/17
@@ -64,14 +64,14 @@ public class Submarine {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Submarine)) return false;
+        if (this == o){ return true; }
+        if (!(o instanceof Submarine)){ return false; }
 
         Submarine submarine = (Submarine) o;
 
-        if (!getX().equals(submarine.getX())) return false;
-        if (!getY().equals(submarine.getY())) return false;
-        if (!getZ().equals(submarine.getZ())) return false;
+        if (!getX().equals(submarine.getX())){ return false; }
+        if (!getY().equals(submarine.getY())){ return false; }
+        if (!getZ().equals(submarine.getZ())){ return false; }
         return getDirection().equals(submarine.getDirection());
     }
 

@@ -75,7 +75,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>br.com.buscape.yellowSubmarine.Main</mainClass>
+                            <mainClass>br.com.buscape.yellowsubmarine.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

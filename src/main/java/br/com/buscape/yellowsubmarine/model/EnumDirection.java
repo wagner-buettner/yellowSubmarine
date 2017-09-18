@@ -1,4 +1,4 @@
-package br.com.buscape.yellowSubmarine.model;
+package br.com.buscape.yellowsubmarine.model;
 
 /**
  * @author wagner on 18/09/17

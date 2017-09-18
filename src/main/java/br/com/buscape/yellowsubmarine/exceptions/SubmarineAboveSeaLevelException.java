@@ -1,4 +1,4 @@
-package br.com.buscape.yellowSubmarine.exceptions;
+package br.com.buscape.yellowsubmarine.exceptions;
 
 /**
  * @author wagner on 18/09/17
