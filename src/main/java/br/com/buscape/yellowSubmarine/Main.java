@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in, "UTF-8");
+        Scanner scanner = new Scanner(System.in, "UTF-8"); //LMRDDMMUU
         System.out.print("Lets move the Yellow Submarine, tell me the coordinate: ");
         String command = scanner.next();
 

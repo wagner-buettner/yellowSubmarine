@@ -12,16 +12,16 @@ public class MoveLeft implements Move {
     public void moveSubmarine(Submarine submarine) {
         switch (submarine.getDirection()) {
             case NORTE:
-                submarine.setDirection(EnumDirection.LESTE);
-                break;
-            case SUL:
                 submarine.setDirection(EnumDirection.OESTE);
                 break;
+            case SUL:
+                submarine.setDirection(EnumDirection.LESTE);
+                break;
             case LESTE:
-                submarine.setDirection(EnumDirection.SUL);
+                submarine.setDirection(EnumDirection.NORTE);
                 break;
             case OESTE:
-                submarine.setDirection(EnumDirection.NORTE);
+                submarine.setDirection(EnumDirection.SUL);
                 break;
             default:
                 break;

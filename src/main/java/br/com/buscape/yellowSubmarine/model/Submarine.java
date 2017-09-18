@@ -10,6 +10,13 @@ public class Submarine {
     private Integer z;
     private EnumDirection direction;
 
+    public Submarine(){
+        this.x= 0;
+        this.y= 0;
+        this.z= 0;
+        this.direction = EnumDirection.NORTE;
+    }
+
     public Integer getX() {
         return x;
     }

@@ -1,27 +1,27 @@
 package br.com.buscape.yellowSubmarine.controller;
 
-import br.com.buscape.yellowSubmarine.model.EnumDirection;
 import br.com.buscape.yellowSubmarine.model.Submarine;
 
 /**
  * @author wagner on 18/09/17
  */
-public class MoveRight implements Move {
+
+public class MoveForward implements Move {
 
     @Override
     public void moveSubmarine(Submarine submarine) {
         switch (submarine.getDirection()) {
             case NORTE:
-                submarine.setDirection(EnumDirection.LESTE);
+                submarine.setY(submarine.getY()+1);
                 break;
             case SUL:
-                submarine.setDirection(EnumDirection.OESTE);
+                submarine.setY(submarine.getY()-1);
                 break;
             case LESTE:
-                submarine.setDirection(EnumDirection.SUL);
+                submarine.setX(submarine.getX()+1);
                 break;
             case OESTE:
-                submarine.setDirection(EnumDirection.NORTE);
+                submarine.setX(submarine.getX()-1);
                 break;
             default:
                 break;

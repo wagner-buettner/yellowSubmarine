@@ -16,6 +16,9 @@ public class Control {
         actions = new HashMap<>();
 		actions.put("L", new MoveLeft());
 		actions.put("R", new MoveRight());
+		actions.put("U", new MoveUp());
+		actions.put("D", new MoveDown());
+		actions.put("M", new MoveForward());
     }
 
     public String applyRule(String inputCoordinates) {
