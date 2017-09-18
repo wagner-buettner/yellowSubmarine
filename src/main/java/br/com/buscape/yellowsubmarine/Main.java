@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 final class Main {
 
-    private Main (){};
+    private Main (){}
 
     public static void main(String[] args) throws SubmarineAboveSeaLevelException {
         Scanner scanner = new Scanner(System.in, "UTF-8"); //LMRDDMMUU
