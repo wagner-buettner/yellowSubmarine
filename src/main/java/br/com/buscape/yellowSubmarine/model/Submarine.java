@@ -8,7 +8,7 @@ public class Submarine {
     private Integer x;
     private Integer y;
     private Integer z;
-    private String direction;
+    private EnumDirection direction;
 
     public Integer getX() {
         return x;
@@ -34,11 +34,11 @@ public class Submarine {
         this.z = z;
     }
 
-    public String getDirection() {
+    public EnumDirection getDirection() {
         return direction;
     }
 
-    public void setDirection(String direction) {
+    public void setDirection(EnumDirection direction) {
         this.direction = direction;
     }
 
@@ -70,7 +70,8 @@ public class Submarine {
                 "x=" + x +
                 ", y=" + y +
                 ", z=" + z +
-                ", direction='" + direction + '\'' +
+                ", direction='" + direction.getEnumDirection() + '\'' +
                 '}';
     }
+
 }
