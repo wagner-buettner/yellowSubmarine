@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="30">
+
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p %t %X{user}:%X{sessionid}:%X{threadId} %c{1}:%L - %m%n" />
+        </Console>
+
+        <RollingFile name="fileMain" fileName="logs/yellowSubmarine.log" filePattern="logs/yellowSubmarine.%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout>
+                <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p %t %X{user}:%X{sessionid}:%X{threadId} %c{1}:%L - %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="100 MB" />
+            </Policies>
+        </RollingFile>
+
+        <Async name="asyncFileMain">
+            <AppenderRef ref="fileMain"/>
+        </Async>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="asyncFileMain" />
+        </Root>
+    </Loggers>
+
+</Configuration>
