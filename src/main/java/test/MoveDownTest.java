@@ -1,6 +1,6 @@
 package test;
 
-import br.com.buscape.yellowsubmarine.controller.MoveUp;
+import br.com.buscape.yellowsubmarine.controller.MoveDown;
 import br.com.buscape.yellowsubmarine.model.EnumDirection;
 import br.com.buscape.yellowsubmarine.model.Submarine;
 import org.junit.Before;
@@ -11,19 +11,19 @@ import static org.junit.Assert.*;
 /**
  * @author wagner on 19/09/17
  */
-public class MoveUpTest {
-    private MoveUp moveUp;
+public class MoveDownTest {
+    private MoveDown moveDown;
     private final Submarine SUBMARINE_1 = new Submarine(1,2,-2, EnumDirection.NORTE);
 
     @Before
     public void setUp() {
-        moveUp = new MoveUp();
+        moveDown = new MoveDown();
     }
 
     @Test
-    public void testIfMoveUpIsOk() {
-        Integer AxisZ = SUBMARINE_1.getZ() + 1;
-        moveUp.moveSubmarine(SUBMARINE_1);
+    public void testIfMoveDownIsOk() {
+        Integer AxisZ = SUBMARINE_1.getZ() - 1;
+        moveDown.moveSubmarine(SUBMARINE_1);
         assertEquals(AxisZ, SUBMARINE_1.getZ());
     }
 
