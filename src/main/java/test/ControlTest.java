@@ -14,7 +14,7 @@ import static org.junit.Assert.assertNotNull;
 /**
  * @author wagner on 18/09/17
  */
-public class MainTest {
+public class ControlTest {
 
     private static final String INPUT_1 = "LMRDDMMUU";
     private static final String OUTPUT_1  = new Submarine(-1,2,0, EnumDirection.NORTE).getLastPosition();
