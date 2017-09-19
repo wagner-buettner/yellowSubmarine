@@ -1,6 +1,5 @@
-package test;
+package br.com.buscape.yellowsubmarine.controller;
 
-import br.com.buscape.yellowsubmarine.controller.Control;
 import br.com.buscape.yellowsubmarine.exceptions.SubmarineAboveSeaLevelException;
 import br.com.buscape.yellowsubmarine.model.EnumDirection;
 import br.com.buscape.yellowsubmarine.model.Submarine;

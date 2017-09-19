@@ -1,10 +1,8 @@
-package test;
+package br.com.buscape.yellowsubmarine.model;
 
-import br.com.buscape.yellowsubmarine.model.EnumDirection;
-import br.com.buscape.yellowsubmarine.model.Submarine;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * @author wagner on 19/09/17
@@ -18,7 +16,7 @@ public class SubmarineTest {
         assertEquals(0, SUBMARINE_1.getX().intValue());
         assertEquals(0, SUBMARINE_1.getY().intValue());
         assertEquals(0, SUBMARINE_1.getZ().intValue());
-        assertEquals(EnumDirection.LESTE, SUBMARINE_1.getDirection());
+        assertEquals(EnumDirection.NORTE, SUBMARINE_1.getDirection());
     }
 
     @Test
