@@ -9,7 +9,7 @@ import java.util.Scanner;
 /**
  * @author wagner on 17/09/17
  */
-final class Main {
+public final class Main {
 
     private Main (){}
 
