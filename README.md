@@ -68,5 +68,5 @@ After building the project:
 - Get in ```target``` folder inside the project (after building it with maven)
 - Run jar file: ```java -jar yellowSubmarine-0.0.1-jar-with-dependencies.jar```
 
-##Logs 
+## Logs 
 - A Log Folder is created by log4j2 while the application is executed, you can also check over there the inputs and outputs =]
