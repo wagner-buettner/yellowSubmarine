@@ -4,7 +4,7 @@
 This is a test for Buscapé Company.
 Which, given an input with coordinates, the application must calculate the last submarine position and direction.
 
-##Defitions
+## Defitions
 The submarine position is defined by a notation like this:
 ```(0, 0, 0, NORTE)```
 
@@ -19,20 +19,20 @@ Remember: 0 on the Z axis is the surface of the ocean.
 Submarine position is represented by ```(X,Y,Z)```.
 Direction is represented in Portuguese: ```(Norte, Sul, Leste e Oeste)```.
 
-##Commands
+## Commands
 To move the submarine, you must simple commands:
 - L, R: to rotate Left or Right
 - M: to move the submarine Forward
 - U, D: to go Up or Down
 
-##Example
-###Input:
+## Example
+### Input:
 
 In one line, scientist will give the commands:
 
 LMRDDMMUU
 
-###Output:
+### Output:
 
 Output must contain the final submarine position with your direction, example:
 
